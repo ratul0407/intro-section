@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- linking the css file -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/index-0550c855.css" />
+  </head>
+  <body class="font-Epilogue">
+    <!-- navbar -->
+    <nav>
+      <!-- flex container -->
+      <div class="mx-auto container px-4 py-4 md:px-10 md:py-6">
+        <div class="flex justify-between items-center">
+          <!-- heading -->
+          <div class="md:flex justify-start items-center space-x-8">
+            <h2 class="font-bold text-5xl">snap</h2>
+            <div class="hidden md:block">
+              <ul class="flex space-x-10 text-mediumGray">
+                <li class="features relative">
+                  <a
+                    class="hover:text-almostblack focus:text-almostblack"
+                    href="#"
+                    >Features
+                    <img
+                      class="inline-block first-down-arrow"
+                      src="assets/icon-arrow-down-ebad99bf.svg"
+                      alt=""
+                  /></a>
+                  <!-- Dropdown icon for features link -->
+                  <div
+                    class="features-dropdown hidden absolute text-center bg-almostWhite shadow-xl p-8 rounded-xl space-y-4 z-10 right-0"
+                  >
+                    <div class="flex items-center space-x-2 cursor-pointer">
+                      <img
+                        class="h-full"
+                        src="assets/icon-todo-95927352.svg"
+                        alt=""
+                      />
+                      <p class="min-w-full text-left pl-2">Todo List</p>
+                    </div>
+                    <div class="flex items-center space-x-2 cursor-pointer">
+                      <img
+                        class="h-full"
+                        src="assets/icon-calendar-b34d000b.svg"
+                        alt=""
+                      />
+                      <p class="min-w-full text-left pl-2">Calender</p>
+                    </div>
+                    <div class="flex items-center space-x-2 cursor-pointer">
+                      <img
+                        class="h-full"
+                        src="assets/icon-reminders-a5569ebc.svg"
+                        alt=""
+                      />
+                      <p class="min-w-full text-left pl-2">Reminders</p>
+                    </div>
+                    <div class="flex items-center space-x-2 cursor-pointer">
+                      <img
+                        class="h-full"
+                        src="assets/icon-planning-09cf89e5.svg"
+                        alt=""
+                      />
+                      <p class="min-w-full text-left pl-2">Planing</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="company relative">
+                  <a
+                    class="hover:text-almostblack focus:text-almostblack"
+                    href="#"
+                    >Company
+                    <img
+                      class="inline-block second-down-arrow"
+                      src="assets/icon-arrow-down-ebad99bf.svg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="company-drop-down hidden absolute left-0">
+                    <div
+                      class="bg-almostWhite shadow-xl p-4 rounded-lg min-w-[12ch] space-y-4"
+                    >
+                      <p class="min-w-full cursor-pointer">History</p>
+                      <p class="cursor-pointer">Our team</p>
+                      <p class="cursor-pointer">Blog</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-almostblack focus:text-almostblack"
+                    href="#"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-almostblack focus:text-almostblack"
+                    href="#"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- list items -->
+
+          <div class="md:hidden relative">
+            <div class="">
+              <img
+                class="hamburger scale-125 cursor-pointer"
+                src="assets/icon-menu-766b6225.svg"
+                alt=""
+              />
+              <img
+                class="hidden cross"
+                src="assets/icon-close-menu-9e723834.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="hidden mobile-list-items absolute top-10 right-0 text-center"
+            >
+              <!-- list items for mobile -->
+              <ul class="h-[40vh] w-[50vh] space-y-4 bg-almostWhite rounded-lg">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+                <div class="flex flex-col space-y-4">
+                  <button>Login</button>
+                  <button
+                    class="border border-almostblack w-min mx-auto px-4 py-2 rounded-lg"
+                  >
+                    Register
+                  </button>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <!-- list items for large screens -->
+          <div class="hidden md:block">
+            <div class="space-x-4 text-mediumGray">
+              <button class="hover:text-black">Login</button>
+              <button
+                class="border border-almostblack px-4 py-2 rounded-xl hover:text-black"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="mx-auto container md:pb-32">
+      <div
+        class="md:flex md:flex-row-reverse md:justify-between md:mt-20 md:px-32"
+      >
+        <!-- flex container -->
+        <div>
+          <!-- images div -->
+          <img
+            class="block md:hidden"
+            src="assets/image-hero-mobile-b9d32923.png"
+            alt=""
+          />
+          <img
+            class="hidden md:block px-8"
+            src="assets/image-hero-desktop-3bda6511.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="md:pt-20 md:flex md:flex-col md:justify-between h-full">
+            <div class="text-center space-y-6 md:text-left md:space-y-16">
+              <h1
+                class="text-4xl font-bold text-center mt-8 md:text-7xl md:text-left md:pr-6"
+              >
+                Make remote work
+              </h1>
+              <p
+                class="text-mediumGray text-center px-4 md:text-left md:px-0 md:pr-16"
+              >
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <button
+                class="border border-almostblack rounded-2xl bg-black text-almostWhite px-6 py-3 hover:bg-almostWhite hover:text-almostblack"
+              >
+                Learn more
+              </button>
+            </div>
+            <div>
+              <div
+                class="flex px-4 md:px-0 md:space-x-4 justify-evenly pt-10 items-center md:pt-0 md:justify-start"
+              >
+                <img
+                  class="h-4 md:h-full"
+                  src="assets/client-databiz-3098feb2.svg"
+                  alt=""
+                />
+                <img
+                  class="h-4 md:h-full"
+                  src="assets/client-audiophile-cdc1075f.svg"
+                  alt=""
+                />
+                <img
+                  class="h-4 md:h-full"
+                  src="assets/client-meet-1cf19dba.svg"
+                  alt=""
+                />
+                <img
+                  class="h-4 md:h-full"
+                  src="assets/client-maker-a770212d.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
